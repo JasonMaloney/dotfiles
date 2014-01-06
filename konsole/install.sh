@@ -1,9 +1,24 @@
 
 # Install Solarized theme for Konsole
 
-mkdir -p ~/.kde/share/apps/konsole/
+$KP="~/.kde/share/apps/konsole"
 
-curl -Sso ~/.kde/share/apps/konsole/Solarized-Dark.colorscheme \
+mkdir -p $KP/
+
+curl -Sso $KP/Solarized-Dark.colorscheme \
     https://raw.github.com/JasonMaloney/konsole-colors-solarized/master/Solarized%20Dark.colorscheme
-curl -Sso ~/.kde/share/apps/konsole/Solarized-Light.colorscheme \
+curl -Sso $KP/Solarized-Light.colorscheme \
     https://raw.github.com/JasonMaloney/konsole-colors-solarized/master/Solarized%20Light.colorscheme
+
+cat > $KP/Shell.profile << "EOF"
+[Appearance]
+ColorScheme=Solarized-Dark
+
+[General]
+Name=Shell
+Parent=FALLBACK/
+
+[Scrolling]
+HistoryMode=2
+EOF
+
