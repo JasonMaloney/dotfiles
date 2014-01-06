@@ -6,4 +6,4 @@ curl -Sso $HOME/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 rm -rf $HOME/.vim/bundle/git-colors-solarized/
-git clone git@github.com:JasonMaloney/vim-colors-solarized.git $HOME/.vim/bundle/git-colors-solarized/
+git clone https://github.com/JasonMaloney/vim-colors-solarized.git $HOME/.vim/bundle/git-colors-solarized/
