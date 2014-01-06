@@ -1,7 +1,7 @@
 
 # Install Solarized theme for Konsole
 
-$KP="~/.kde/share/apps/konsole"
+KP="~/.kde/share/apps/konsole"
 
 mkdir -p $KP/
 
